@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#9874a7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maths Operations"
+        android:textSize="35sp"
+        android:textColor="#0C0B0B"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:gravity="left"
+            android:text=" NUmber1:"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="true"
+            android:ems="10"
+            android:gravity="center"
+
+            android:inputType="numberDecimal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:gravity="left"
+            android:text=" Number2:"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="true"
+            android:ems="10"
+
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:editable="false"
+        android:gravity="left"
+        android:text=" Operation:"
+        android:textColor="#0C0B0B"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="56dp" />
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/sub"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUB"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/mul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLY"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIVIDE"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:editable="false"
+            android:gravity="left"
+            android:text=" RESULT:"
+            android:textColor="#0C0B0B"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="56dp" />
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+
+            android:inputType="numberDecimal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
